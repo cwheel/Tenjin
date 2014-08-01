@@ -1,10 +1,6 @@
 <?php
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
-	print_r(provideDataWunderground());
 	function provideDataWunderground() {
-
-		include('../config.php');
+		include('config.php');
 	    $weatherArray = array();
 	    $downloadedweatherdata = null;
 
@@ -53,7 +49,7 @@
 
 		$weatherJson = json_encode($weatherArray);
 		file_put_contents($config['localWeatherData'], $weatherJson);
-		return $weatherJson;
+		return $weatherArray;
 	}
 
 	function downloadWeatherData($apiFile){

@@ -1,6 +1,6 @@
 <?php
 	function provideDataHomework() {
-		include('../config.php');
+		include('config.php');
 		$homework = array();
 		$rm1hw = array();
 		$rm2hw = array();
@@ -35,6 +35,6 @@
 		$homework['rm1'] = $rm1hw;
 		$homework['rm2'] = $rm2hw;
 
-		return json_encode($homework);
+		return $homework;
 	}
 ?>

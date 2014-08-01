@@ -1,7 +1,7 @@
 <?php
 	function provideDataAlarms() {
-		include('../config.php');
+		include('config.php');
 
-		return json_encode($config['alarms']);
+		return $config['alarms'];
 	}
 ?>

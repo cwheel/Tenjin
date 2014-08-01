@@ -1,8 +1,6 @@
 <?php
 	include('config.php');
-	error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-	
+
 	$dps = scandir("data_providers");
 	$finalData = array();
 
@@ -10,8 +8,8 @@
 		if ($dp != "." && $dp != "..") {
 			include_once("data_providers/" . $dp);
 
-			$providedData = call_user_func("provideData" . str_replace(".php", "", $dp));
-			$finalData[] = $providedData;
+			$providedData = call_user_func("provideData" . ucfirst(str_replace(".php", "", $dp)));
+			$finalData[str_replace(".php", "", $dp)] = $providedData;
 		}
 	}
 
