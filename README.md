@@ -1,5 +1,4 @@
-![alt tag](http://imgur.com/I3kGSdY)
-# Tenjin
+![Tenjin Logo](http://i.imgur.com/I3kGSdY.png)
 
 A day by day start screen. Tenjin is designed to be displayed on an always-on moniter. The default modules will provide weather, OneNote homework integration, Reddit News, alarm clocks, and clothing recommendations (based on weather). Tenjin is built for two roommates and the config file is setup as such.
 
