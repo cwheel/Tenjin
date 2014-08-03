@@ -18,6 +18,14 @@
 		foreach ($webCal['feed']['entry'] as $calEntry) {
 			if (strpos($calEntry['gd$when'][0]['startTime'], date("Y-m-d")) !== false) {
 			    $calander[] = $calEntry;
+			} else {
+				$start = date("Y-m-d", strtotime($calEntry['gd$when'][0]['startTime']));
+				$end = date("Y-m-d", strtotime($calEntry['gd$when'][0]['endTime']));
+				$today = date("Y-m-d");
+
+				if (($today > $start) && ($today < $end)) {
+					$calander[] = $calEntry;
+				}
 			}
 		}
 

@@ -11,7 +11,7 @@
 			}else if (date("H",filemtime($config['localWeatherData'])) <= date("H") - 3){
 				$downloadedweatherdata = downloadWeatherData($config['weatherDataHour']);
 			}else{
-				return file_get_contents($config['localWeatherData']);
+				return json_decode(file_get_contents($config['localWeatherData']), true);
 			}
 		}else{
 			$downloadedweatherdata = downloadWeatherData($config['weatherDataHour']);

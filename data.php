@@ -7,9 +7,12 @@
 	foreach ($dps as $dp) {
 		if ($dp != "." && $dp != "..") {
 			include_once("data_providers/" . $dp);
+			$modFunc = "provideData" . ucfirst(str_replace(".php", "", $dp));
 
-			$providedData = call_user_func("provideData" . ucfirst(str_replace(".php", "", $dp)));
-			$finalData[str_replace(".php", "", $dp)] = $providedData;
+			if (function_exists($modFunc)) {
+				$providedData = call_user_func($modFunc);
+				$finalData[str_replace(".php", "", $dp)] = $providedData;
+			}
 		}
 	}
 
