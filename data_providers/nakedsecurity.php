@@ -1,6 +1,6 @@
 <?php
 function provideDatanakedsecurity() {
-	include('../config.php');
+	include('config.php');
 	if (file_exists($config['localNakedFeed']) && date("d",filemtime($config['localNakedFeed'] )) == date("d")){
 		return json_decode(file_get_contents($config['localNakedFeed']), true);
 	}else{
