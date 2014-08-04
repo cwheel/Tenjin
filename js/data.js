@@ -3,7 +3,6 @@ var currentProviderFunction = null;
 
 $(document).ready(function () {
 	updatePage();
-	clock();
 });
 
 function updatePage() {

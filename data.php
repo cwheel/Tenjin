@@ -5,7 +5,7 @@
 	$finalData = array();
 
 	foreach ($dps as $dp) {
-		if ($dp != "." && $dp != "..") {
+		if ($dp != "." && $dp != ".." && $dp != "redditheadliner.php") {
 			include_once("data_providers/" . $dp);
 			$modFunc = "provideData" . ucfirst(str_replace(".php", "", $dp));
 
