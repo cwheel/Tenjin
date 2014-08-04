@@ -27,22 +27,6 @@ function updatePage() {
 	setTimeout(updatePage, 1000 * 60 * 2);
 }
 
-function clock() {
-	var now = new Date();
-
-	if (now.getMinutes().toString().length == 1) {
-			$('#time').html(now.getHours() + ":0" + now.getMinutes());
-	} else {
-			$('#time').html(now.getHours() + ":" + now.getMinutes());
-	}
-
-	$('#day').html(day(now.getDay()));
-	$('#month').html(month(now.getMonth()) + " " + now.getDate());
-
-	now = null;
-	setTimeout(clock, 1000 * 10);
-}
-
 function month(num) {
 	switch (num) {
 		case 0:

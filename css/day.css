@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,700);
 
+body {
+	overflow: hidden;
+}
+
 #bkg1 {
 	position: absolute;
 	padding: 0px;
@@ -88,4 +92,14 @@
 	top: 43px;
 	left: 32px;
 	position: absolute;
+}
+
+.page {
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 924px;
+	height: 450px;
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	border-radius: 10px;
 }

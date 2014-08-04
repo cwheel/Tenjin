@@ -2,6 +2,8 @@
 	<head>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/clock.js"></script>
+		<script type="text/javascript" src="js/pagination.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
 	</head>
 
@@ -24,6 +26,9 @@
 
 		<div id="logo"></div>
 		<div id="build">Build 14006d61e1</div>
+
+		<div class="page" id="pg1"></div>
+		<div class="page" id="pg2"></div>
 	</body>
 </html>
 
