@@ -38,6 +38,7 @@ function interpretDataBackground(updateData) {
 	}
 }
 
+
 function imagesForSeason(season) {
 	switch (season) {
 		case "Spring":

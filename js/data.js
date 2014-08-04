@@ -1,5 +1,6 @@
-var dataProviders = ["calendar.js", "background.js", "alarms.js", "homework.js", "wunderground.js"];
+var dataProviders = ["calendar.js", "background.js", "alarms.js", "homework.js", "wunderground.js", "clock.js"];
 var currentProviderFunction = null;
+var initsRun = false;
 
 $(document).ready(function () {
 	updatePage();
@@ -15,61 +16,22 @@ function updatePage() {
 			for (var i = 0; i < dataProviders.length; i++) {
 				currentProviderFunction = "interpretData" + dataProviders[i].split('.')[0][0].toUpperCase() + dataProviders[i].split('.')[0].substring(1);
 
-				$.getScript("js/data_providers/" + dataProviders[i], function(data, status) {
+				$.getScript("js/ui_modules/" + dataProviders[i], function(data, status) {
 						var funcName = data.match(/interpretData.*?\(/)[0].replace("(","");
-						window[funcName](updateData);
+						if (typeof window[funcName] === "function") {
+							window[funcName](updateData);
+						}
+
+						if (!initsRun) {
+							if (typeof window[funcName + "Init"] === "function") { 
+								window[funcName + "Init"](updateData);
+							}	
+						}
 				});
 			}
 		}
 	});
 
+	initsRun = true;
 	setTimeout(updatePage, 1000 * 60 * 2);
-}
-
-function month(num) {
-	switch (num) {
-		case 0:
-			return "Janurary";
-		case 1:
-			return "February";
-		case 2:
-			return "March";
-		case 3:
-			return "April";
-		case 4:
-			return "May";
-		case 5:
-			return "June";
-		case 6:
-			return "July";
-		case 7:
-			return "August";
-		case 8:
-			return "September";
-		case 9:
-			return "October";
-		case 10:
-			return "November";
-		case 11:
-			return "December";
-	}
-}
-
-function day(num) {
-	switch (num) {
-		case 0:
-			return "Sunday";
-		case 1:
-			return "Monday";
-		case 2:
-			return "Tuesday";
-		case 3:
-			return "Wednesday";
-		case 4:
-			return "Thursday";
-		case 5:
-			return "Friday";
-		case 6:
-			return "Saturday";
-	}
 }

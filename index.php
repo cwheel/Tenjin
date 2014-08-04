@@ -2,7 +2,6 @@
 	<head>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/data.js"></script>
-		<script type="text/javascript" src="js/clock.js"></script>
 		<script type="text/javascript" src="js/pagination.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
 	</head>
