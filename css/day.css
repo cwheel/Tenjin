@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,700);
+
+#bkg1 {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	z-index: -1;
+}
+
+#bkg2 {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	z-index: -2;
+}
+
+#time {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+	color: #FFF;
+	bottom: 30px;
+	left: 30px;
+	position: absolute;
+}
+
+#month {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #FFF;
+}
+
+#day {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #FFF;
+}
+
+#dateContainer {
+	bottom: 40px;
+	left: 220px;
+	width: 200px;
+	position: absolute;
+}
+
+#clock {
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#calEvent {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #FFF;
+	position: absolute;
+	right: 30px;
+	bottom: 40px;
+}
+
+#logo {
+	background-image: url(../src/webBadge.png);
+	position: absolute;
+	width: 70px;
+	height: 35px;
+	top: 10px;
+	left: 30px;
+	background-size:cover;
+	-webkit-background-size:cover;
+}
+
+#build {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 8px;
+	color: #FFF;
+	top: 43px;
+	left: 32px;
+	position: absolute;
+}
