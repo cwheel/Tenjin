@@ -6,7 +6,12 @@ function provideDatanakedsecurity() {
 	}else{
 		$downloadarray = json_decode(json_encode(simplexml_load_string(implode(file($config['nakedFeed'])))),TRUE);
 		$naked = array();
-		$naked = $downloadarray['channel']['item'];
+		for ($i=0; $i < 5; $i++) { 
+			$naked[$i]['title'] = $downloadarray['channel']['item'][$i]['title'];
+			$naked[$i]['description'] = $downloadarray['channel']['item'][$i]['description'];
+			$naked[$i]['date'] = strtotime($downloadarray['channel']['item'][$i]['pubDate']);
+		}
+		$nakedjson = json_encode($naked);
 		file_put_contents($config['localNakedFeed'], json_encode($naked));
 		return $naked;
 	}
