@@ -1,7 +1,7 @@
-function interpretDataAlarms(updateData) {
+function moduleAlarmsUI(updateData) {
 	
 }
 
 function interpretDataAlarmsInit(updateData) {
-	addPage("Alarms", "Alarms");
+	addPage("Alarms", '<div id="alTitle">Alarms</div><div id="bar"></div>');
 }

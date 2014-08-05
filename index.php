@@ -7,6 +7,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
 		<link rel="stylesheet" type="text/css" href="css/homework.css">
+		<link rel="stylesheet" type="text/css" href="css/alarms.css">
 	</head>
 
 	<body>
