@@ -23,6 +23,10 @@ function updatePage() {
 							}
 							initsRun++;
 						}
+						
+						if (typeof window[funcName] === "function") {
+							window[funcName](updateData);
+						}
 				});
 			}
 		}
