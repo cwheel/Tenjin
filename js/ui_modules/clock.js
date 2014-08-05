@@ -1,4 +1,4 @@
-function interpretDataClockInit(updateData) {
+function initModuleClock(updateData) {
 	clock();
 }
 

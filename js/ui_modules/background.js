@@ -1,4 +1,4 @@
-function interpretDataBackground(updateData) {
+function jsonUpdateModuleBackground(updateData) {
 	for (var i = 0; i < updateData.calendar.length; i++) {
 		var title = updateData.calendar[i].title.$t;
 

@@ -1,4 +1,4 @@
-var modules = ["calendar.js", "background.js", "alarms.js", "homework.js", "wunderground.js", "clock.js"];
+var modules = ["calendar.js", "background.js", "alarms.js", "homework.js", "clock.js"];
 var initsRun = 0;
 var updateData = null;
 
@@ -15,17 +15,17 @@ function updatePage() {
 			
 			for (var i = 0; i < modules.length; i++) {
 				$.getScript("js/ui_modules/" + modules[i], function(data, status) {
-						var funcName = data.match(/interpretData.*?\(/)[0].replace("(","");
+						var funcName = data.match(/Module.*?\(/)[0].replace("(","");
 
 						if (initsRun != modules.length) {
-							if (typeof window[funcName + "Init"] === "function") { 
-								window[funcName + "Init"](updateData);
+							if (typeof window["init" + funcName] === "function") { 
+								window["init" + funcName](updateData);
 							}
 							initsRun++;
 						}
-						
-						if (typeof window[funcName] === "function") {
-							window[funcName](updateData);
+
+						if (typeof window["jsonUpdate" + funcName] === "function") {
+							window["jsonUpdate" + funcName](updateData);
 						}
 				});
 			}

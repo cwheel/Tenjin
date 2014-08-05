@@ -1,4 +1,4 @@
-function interpretDataCalendar(updateData) {
+function jsonUpdateModuleCalendar(updateData) {
 	for (var i = 0; i < updateData.calendar.length; i++) {
 		var title = updateData.calendar[i].title.$t;
 		var desc = updateData.calendar[i].content.$t;

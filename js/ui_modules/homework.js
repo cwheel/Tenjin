@@ -1,7 +1,7 @@
 var roomateOne = "";
 var roomateTwo = "";
 
-function interpretDataHomework(updateData) {
+function pageLoadModuleHomework(updateData) {
 	for (var assignment in updateData.homework.rm1) {
 		if (updateData.homework.rm1[assignment] == "true") {
 			$("#rmhw1").append('<div class="hwAssignmentCompleted">' + assignment + '</div>');
@@ -18,6 +18,6 @@ function interpretDataHomework(updateData) {
 	}
 }
 
-function interpretDataHomeworkInit(updateData) {
+function initModuleHomework(updateData) {
 	addPage("Homework", '<div id="hwTitle">Homework</div><div id="bar"></div><div class="hwRoomate" id="rm1">' + roomateOne + '</div><div class="hwRoomate" id="rm2">' + roomateTwo + '</div><div class="hw" id="rmhw1"></div><div class="hw" id="rmhw2"></div>');
 }

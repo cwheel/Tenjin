@@ -11,7 +11,7 @@ function showNext() {
 	if ($("#pg1").css('left') == "50px") {
 		var page = getPage();
 		$('#pg2').html(pages[page]);
-		window["interpretData" + page](updateData);
+		window["pageLoadModule" + page](updateData);
 
 		$('#pg2').css('left', offscren);
 		$("#pg2").show();
@@ -23,7 +23,7 @@ function showNext() {
 	} else if ($("#pg2").css('left') == "50px") {
 		var page = getPage();
 		$('#pg1').html(pages[page]);
-		window["interpretData" + page](updateData);
+		window["pageLoadModule" + page](updateData);
 
 		$('#pg1').css('left', offscren);
 		$("#pg1").show();
@@ -44,7 +44,7 @@ function addPage(title, html) {
 	if ($('#pg1').html() === "") {
 		var page = getPage();
 		$('#pg1').html(pages[page]);
-		window["interpretData" + page](updateData);
+		window["pageLoadModule" + page](updateData);
 	}
 }
 
