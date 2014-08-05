@@ -15,4 +15,5 @@
 			}
 		}
 	}
+	echo json_encode($finalData)
 ?>
