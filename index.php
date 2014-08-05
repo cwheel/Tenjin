@@ -1,9 +1,12 @@
 <html>
 	<head>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/pagination.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
+		<link rel="stylesheet" type="text/css" href="css/homework.css">
 	</head>
 
 	<body>

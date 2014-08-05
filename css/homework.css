@@ -1,0 +1,61 @@
+#hwTitle {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #FFF;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+.hwRoomate {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFF;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	position: absolute;
+}
+
+#rm2 {
+	left: 450px;
+	top: 55px;
+}
+
+#rm1 {
+	top: 55px;
+}
+
+#bar {
+	height: 1px;
+	width: 860px;
+	position: absolute;
+	background-color: #FFF;
+	top: 53px;
+	left: 30px;
+}
+
+.hw {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	position: absolute;
+}
+
+#rmhw1 {
+	top: 75px;
+	left: 50px;
+}
+
+#rmhw2 {
+	top: 75px;
+	left: 470px;
+}
+
+.hwAssignmentCompleted {
+	text-decoration:line-through;
+	color: rgba(150, 150, 150, 0.7);;
+}
