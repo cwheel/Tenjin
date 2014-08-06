@@ -1,5 +1,5 @@
-var roomateOne = "";
-var roomateTwo = "";
+var roomateOne = "Cameron";
+var roomateTwo = "James";
 
 function pageLoadModuleHomework(updateData) {
 	for (var assignment in updateData.homework.rm1) {
