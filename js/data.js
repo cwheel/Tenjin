@@ -23,7 +23,7 @@ function updatePage() {
 							}
 							initsRun++;
 						}
-
+						
 						if (typeof window["jsonUpdate" + funcName] === "function") {
 							window["jsonUpdate" + funcName](updateData);
 						}

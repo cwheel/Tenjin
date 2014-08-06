@@ -11,14 +11,14 @@ function clock() {
 			$('#time').html(now.getHours() + ":" + now.getMinutes());
 	}
 
-	$('#day').html(day(now.getDay()));
-	$('#month').html(month(now.getMonth()) + " " + now.getDate());
+	$('#day').html(clockDay(now.getDay()));
+	$('#month').html(clockMonth(now.getMonth()) + " " + now.getDate());
 
 	now = null;
 	setTimeout(clock, 1000 * 10);
 }
 
-function month(num) {
+function clockMonth(num) {
 	switch (num) {
 		case 0:
 			return "Janurary";
@@ -47,7 +47,7 @@ function month(num) {
 	}
 }
 
-function day(num) {
+function clockDay(num) {
 	switch (num) {
 		case 0:
 			return "Sunday";
