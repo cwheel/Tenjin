@@ -29,10 +29,12 @@
 		</div>
 
 		<div id="logo"></div>
-		<div id="build">Build 14006d61e1</div>
+		<div id="build">Build e9b1761b87</div>
 
 		<div class="page" id="pg1"></div>
 		<div class="page" id="pg2"></div>
+
+		<audio name="media" id="alarm"><source src="<?php include('config.php'); echo $config['alarmSound']; ?>" type="audio/mpeg" id="player"></audio>
 	</body>
 </html>
 

@@ -16,3 +16,26 @@
 	top: 53px;
 	left: 30px;
 }
+
+#alarmsContainer {
+	position: absolute;
+	left: 30px;
+	top: 55px;
+}
+
+.alDay {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFF;
+	left: 30px;
+}
+
+.alTime {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	left: 30px;
+	position: relative;
+}

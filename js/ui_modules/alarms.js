@@ -1,6 +1,16 @@
 var alarms = null;
+var alarmRunning = false;
+var alarmsCount = 0;
+
 function pageLoadModuleAlarms(updateData) {
-	
+	if (alarms !== null) {
+		for (var day in alarms) {
+			$("#alarmsContainer").append('<div class="alDay">' + day + '</div>');
+			for (var i = 0; i < alarms[day].length; i++) {
+				$("#alarmsContainer").append('<div class="alTime">' + alarms[day][i] + '</div>');
+			}
+		}
+	}
 }
 
 function jsonUpdateModuleAlarms(updateData) {
@@ -8,7 +18,7 @@ function jsonUpdateModuleAlarms(updateData) {
 }
 
 function initModuleAlarms(updateData) {
-	addPage("Alarms", '<div id="alTitle">Alarms</div><div id="bar"></div>');
+	addPage("Alarms", '<div id="alTitle">Alarms</div><div id="bar"></div><div id="alarmsContainer"></div>');
 	alarms = updateData.alarms;
 	checkAlarms();
 }
@@ -16,8 +26,8 @@ function initModuleAlarms(updateData) {
 function checkAlarms() {
 	var now = new Date();
 
-	if (alarms != null) {
-		for (day in alarms) {
+	if (alarms !== null) {
+		for (var day in alarms) {
 			if (day.toString().indexOf(alarmDay(now.getDay())) >= 0) {
 				var nowTime = null;
 
@@ -29,7 +39,9 @@ function checkAlarms() {
 
 				for (var i = 0; i < alarms[day].length; i++) {
 					if (alarms[day][i] == nowTime) {
-						console.log("Alarm");
+						if (!alarmRunning) {
+							playAlarm();
+						}
 					}
 				}
 			}
@@ -37,6 +49,20 @@ function checkAlarms() {
 	}
 
 	setTimeout(checkAlarms, 1000 * 10);
+}
+
+function playAlarm() {
+	if (alarmsCount <= 3) {
+		//$('#alarm')[0].play();
+		console.log("audio loop now");
+
+		alarmRunning =  true;
+		alarmsCount++;
+		setTimeout(playAlarm, 1000 * 20);
+	} else {
+		alarmRunning =  false;
+		alarmsCount = 0;
+	}
 }
 
 function alarmDay(num) {
