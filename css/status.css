@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+#statusOverlay {
+	background-color: #000;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	height: 768px;
+	width: 1024px;
+	position: absolute;
+}
+
+#statusContent {
+	color: #FFF;
+	font-family: 'Ubuntu Mono';
+	padding: 10px;
+}

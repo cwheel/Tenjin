@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/day.css">
 		<link rel="stylesheet" type="text/css" href="css/homework.css">
 		<link rel="stylesheet" type="text/css" href="css/alarms.css">
+		<link rel="stylesheet" type="text/css" href="css/status.css">
 	</head>
 
 	<body>
