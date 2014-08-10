@@ -2,6 +2,7 @@
 	<head>
 		<title>Tenjin</title>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/status.js"></script>
 		<script type="text/javascript" src="js/pagination.js"></script>
 		<script type="text/javascript" src="js/data.js"></script>
 

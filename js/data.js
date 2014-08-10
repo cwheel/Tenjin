@@ -1,4 +1,4 @@
-var modules = ["calendar.js", "background.js", "alarms.js", "homework.js", "clock.js", "status.js"];
+var modules = ["calendar.js", "alarms.js", "background.js", "homework.js", "clock.js"];
 var initsRun = 0;
 var updateData = null;
 

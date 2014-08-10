@@ -8,10 +8,12 @@
 	height: 768px;
 	width: 1024px;
 	position: absolute;
+	z-index: 2;
 }
 
 #statusContent {
 	color: #FFF;
 	font-family: 'Ubuntu Mono';
-	padding: 10px;
+	padding: 13px;
+	z-index: 3;
 }
