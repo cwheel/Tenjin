@@ -8,7 +8,7 @@
 		if (file_exists($config['localWeatherData'])){
 			if (date("d",filemtime($config['localWeatherData'])) != date("d")){
 				$downloadedweatherdata = downloadWeatherData($config['weatherDataHour']);
-			}else if (date("H",filemtime($config['localWeatherData'])) <= date("H") - 3){
+			}else if (date("H",filemtime($config['localWeatherData'])) != date("H")){
 				$downloadedweatherdata = downloadWeatherData($config['weatherDataHour']);
 			}else{
 				return json_decode(file_get_contents($config['localWeatherData']), true);
@@ -17,7 +17,7 @@
 			$downloadedweatherdata = downloadWeatherData($config['weatherDataHour']);
 		}
 
-		for ($i = 0; $i < 36; $i++){
+		for ($i = 0; $i < 6; $i++){
 			$weatherArray['hourly_forecast'][$i]['hour'] = $downloadedweatherdata['hourly_forecast'][$i]['FCTTIME']['hour'];
 			$weatherArray['hourly_forecast'][$i]['temp'] = $downloadedweatherdata['hourly_forecast'][$i]['temp'][$config['units']];
 			$weatherArray['hourly_forecast'][$i]['condition'] = $downloadedweatherdata['hourly_forecast'][$i]['wx'];
