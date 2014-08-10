@@ -40,6 +40,7 @@ function checkAlarms() {
 				for (var i = 0; i < alarms[day].length; i++) {
 					if (alarms[day][i] == nowTime) {
 						if (!alarmRunning) {
+							logStatus("Alarms", "Alarm triggered, playing...", false);
 							playAlarm();
 						}
 					}

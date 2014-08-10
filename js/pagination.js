@@ -4,12 +4,16 @@ var pageTitles = new Array();
 
 $(document).ready(function () {
 	$("#pg2").hide();
+	logStatus("Pagination", "Finished loading", false);
+
 	setTimeout(showNext, 1000 * 30);
 });
 
 function showNext() {
+	var page = getPage();
+	logStatus("Pagination", "Switched to page '" + page + "'", false);
+
 	if ($("#pg1").css('left') == "50px") {
-		var page = getPage();
 		$('#pg2').html(pages[page]);
 		window["pageLoadModule" + page](updateData);
 
@@ -21,7 +25,6 @@ function showNext() {
 		});
 		$("#pg2").animate({left: "50px"}, 4000);
 	} else if ($("#pg2").css('left') == "50px") {
-		var page = getPage();
 		$('#pg1').html(pages[page]);
 		window["pageLoadModule" + page](updateData);
 
@@ -40,6 +43,8 @@ function showNext() {
 function addPage(title, html) {
 	pages[title] = html;
 	pageTitles.push(title);
+
+	logStatus("Pagination", "Added page '" + title + "'", false);
 
 	if ($('#pg1').html() === "") {
 		var page = getPage();
