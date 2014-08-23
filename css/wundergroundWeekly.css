@@ -1,0 +1,87 @@
+#wgTitle {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #FFF;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+.wgDay {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFF;
+	position: absolute;
+	left: 20px;
+	width: 121px;
+}
+#wgDay0 {
+	position: absolute;
+	top: 75px;
+	left: 37px;
+}
+#wgDay1 {
+	position: absolute;
+	top: 75px;
+	left: 158px;
+}
+#wgDay2 {
+	position: absolute;
+	top: 75px;
+	left: 279px;
+}
+#wgDay3 {
+	position: absolute;
+	top: 75px;
+	left: 400px;
+}
+#wgDay4 {
+	position: absolute;
+	top: 75px;
+	left: 521px;
+}
+#wgDay5 {
+	position: absolute;
+	top: 75px;
+	left: 642px;
+}
+#wgDay6 {
+	position: absolute;
+	top: 75px;
+	left: 763px;
+}
+#wgbar {
+	height: 1px;
+	width: 860px;
+	position: absolute;
+	background-color: #FFF;
+	top: 53px;
+	left: 30px;
+}
+.wgtext{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	position: absolute;
+	top: 150px;
+	left: 5px;
+}
+.wgtext1{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.wgicon {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 30px;
+	background-size:cover;
+	-webkit-background-size:cover;
+}
