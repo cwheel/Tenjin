@@ -27,6 +27,7 @@
 			$weatherArray['hourly_forecast'][$i]['rainfall'] = $downloadedweatherdata['hourly_forecast'][$i]['qpf'][$config['units']];
 			$weatherArray['hourly_forecast'][$i]['snowfall'] = $downloadedweatherdata['hourly_forecast'][$i]['snow'][$config['units']];
 			$weatherArray['hourly_forecast'][$i]['windspeed'] = $downloadedweatherdata['hourly_forecast'][$i]['wspd'][$config['units']];
+			$weatherArray['hourly_forecast'][$i]['humidity'] = $downloadedweatherdata['hourly_forecast'][$i]['humidity'];
 		}
 
 		$downloadedweatherdata = downloadWeatherData($config['weatherDataWeekly']);

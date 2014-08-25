@@ -1,0 +1,83 @@
+#wghTitle {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #FFF;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+.wghour {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFF;
+	position: absolute;
+	left: 20px;
+	width: 121px;
+}
+#wghour0 {
+	position: absolute;
+	top: 75px;
+	left: 31px;
+}
+#wghour1 {
+	position: absolute;
+	top: 75px;
+	left: 174px;
+}
+#wghour2 {
+	position: absolute;
+	top: 75px;
+	left: 317px;
+}
+#wghour3 {
+	position: absolute;
+	top: 75px;
+	left: 460px;
+}
+#wghour4 {
+	position: absolute;
+	top: 75px;
+	left: 603px;
+}
+#wghour5 {
+	position: absolute;
+	top: 75px;
+	left: 746px;
+}
+
+#wghbar {
+	height: 1px;
+	width: 860px;
+	position: absolute;
+	background-color: #FFF;
+	top: 53px;
+	left: 30px;
+}
+.wgtext{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	position: absolute;
+	top: 150px;
+	left: 5px;
+}
+.wgtext1{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #FFF;
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.wgicon {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 30px;
+	background-size:cover;
+	-webkit-background-size:cover;
+}

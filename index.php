@@ -12,6 +12,9 @@
 		<link rel="stylesheet" type="text/css" href="css/alarms.css">
 		<link rel="stylesheet" type="text/css" href="css/status.css">
 		<link rel="stylesheet" type="text/css" href="css/sleep.css">
+		<link rel="stylesheet" type="text/css" href="css/wundergroundWeekly.css">
+		<link rel="stylesheet" type="text/css" href="css/wundergroundHourly.css">
+
 	</head>
 
 	<body>
