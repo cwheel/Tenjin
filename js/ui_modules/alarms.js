@@ -54,7 +54,7 @@ function checkAlarms() {
 
 function playAlarm() {
 	if (alarmsCount <= 3) {
-		//$('#alarm')[0].play();
+		$('#alarm')[0].play();
 		console.log("audio loop now");
 
 		alarmRunning =  true;
