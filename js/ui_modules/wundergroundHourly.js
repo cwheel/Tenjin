@@ -10,5 +10,5 @@ function pageLoadModuleWundergroundHourly(updateData) {
 }
 
 function initModuleWundergroundHourly(updateData) {
-	addPage("WundergroundHourly", '<div id="wghTitle">6 Hour Weather Report</div><div id="wghbar"></div><div id="wghour0"></div><div id="wghour1"></div><div id="wghour2"></div><div id="wghour3"></div><div id="wghour4"></div><div id="wghour5"></div>');
+	addPage("WundergroundHourly", '<div id="title">6 Hour Weather Report</div><div id="bar"></div><div id="wghour0"></div><div id="wghour1"></div><div id="wghour2"></div><div id="wghour3"></div><div id="wghour4"></div><div id="wghour5"></div>');
 }

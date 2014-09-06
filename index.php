@@ -8,6 +8,7 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
+		<link rel="stylesheet" type="text/css" href="css/page.css">
 		<link rel="stylesheet" type="text/css" href="css/homework.css">
 		<link rel="stylesheet" type="text/css" href="css/alarms.css">
 		<link rel="stylesheet" type="text/css" href="css/status.css">
@@ -35,7 +36,7 @@
 		</div>
 
 		<div id="logo"></div>
-		<div id="build">Build e9b1761b87</div>
+		<div id="build">Build 581e3b50e3 (v1.0)</div>
 
 		<div class="page" id="pg1"></div>
 		<div class="page" id="pg2"></div>

@@ -28,15 +28,6 @@
 	top: 55px;
 }
 
-#bar {
-	height: 1px;
-	width: 860px;
-	position: absolute;
-	background-color: #FFF;
-	top: 53px;
-	left: 30px;
-}
-
 .hw {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;

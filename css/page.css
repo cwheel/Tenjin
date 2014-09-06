@@ -1,0 +1,18 @@
+#title {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #FFF;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+#bar {
+	height: 1px;
+	width: 860px;
+	position: absolute;
+	background-color: #FFF;
+	top: 53px;
+	left: 30px;
+}

@@ -19,5 +19,5 @@ function pageLoadModuleHomework(updateData) {
 }
 
 function initModuleHomework(updateData) {
-	addPage("Homework", '<div id="hwTitle">Homework</div><div id="bar"></div><div class="hwRoomate" id="rm1">' + roomateOne + '</div><div class="hwRoomate" id="rm2">' + roomateTwo + '</div><div class="hw" id="rmhw1"></div><div class="hw" id="rmhw2"></div>');
+	addPage("Homework", '<div id="title">Homework</div><div id="bar"></div><div class="hwRoomate" id="rm1">' + roomateOne + '</div><div class="hwRoomate" id="rm2">' + roomateTwo + '</div><div class="hw" id="rmhw1"></div><div class="hw" id="rmhw2"></div>');
 }
