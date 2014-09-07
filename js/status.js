@@ -25,7 +25,7 @@ $(document).ready(function() {
 	logStatus(null, "Tenjin", true);
 	logStatus(null, "Build e9b1761b87", false);
 
-	logStatus(null, "<br>", false);
+	logStatus(null, "<br>", true);
 
 	var mods = "";
 	for (var i = 0; i < modules.length; i++) {
@@ -37,7 +37,6 @@ $(document).ready(function() {
 	}
 
 	logStatus(null, "Loaded Modules: " + mods, true);
-	logStatus(null, "<br>", false);
 });
 
 function logStatus(module, status, bold) {

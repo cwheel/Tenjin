@@ -8,6 +8,16 @@
 	left: 30px;
 }
 
+.pageIcon {
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	background-size:cover;
+	-webkit-background-size:cover;
+}
+
 #bar {
 	height: 1px;
 	width: 860px;

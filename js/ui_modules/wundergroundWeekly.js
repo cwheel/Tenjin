@@ -28,5 +28,5 @@ function pageLoadModuleWundergroundWeekly(updateData) {
 }
 
 function initModuleWundergroundWeekly(updateData) {
-	addPage("WundergroundWeekly", '<div id="title">Weekly Weather Report</div><div id="bar"></div><div id=wgDay0></div><div id=wgDay1></div><div id=wgDay2></div><div id=wgDay3></div><div id=wgDay4></div><div id=wgDay5></div><div id=wgDay6></div>');
+	addPage("WundergroundWeekly", '<div class=pageIcon style="background-image: url(/src/wunderground.png);"></div><div id="title">Weekly Weather Report</div><div id="bar"></div><div id=wgDay0></div><div id=wgDay1></div><div id=wgDay2></div><div id=wgDay3></div><div id=wgDay4></div><div id=wgDay5></div><div id=wgDay6></div>');
 }

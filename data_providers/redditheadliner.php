@@ -24,9 +24,8 @@
 			$downloadedRedditData = downloadData('http://www.reddit.com/r/' . $ra . "/top.json?limit=5");
 			for ($i=0; $i < $num; $i++) { 
 				//print_r($downloadedRedditData['data']['children'][$i]['data']);
-				if (array_key_exists("is_self", $downloadedRedditData['data']['children'][$i]['data'])){
-					$redditArray[$ra][] = $downloadedRedditData['data']['children'][$i]['data']['title'];		 
-			 		$redditArray[$ra][$downloadedRedditData['data']['children'][$i]['data']['title']][] = $downloadedRedditData['data']['children'][$i]['data']['score'];
+				if (array_key_exists("is_self", $downloadedRedditData['data']['children'][$i]['data'])){	 
+			 		$redditArray[$ra][$downloadedRedditData['data']['children'][$i]['data']['title']] = $downloadedRedditData['data']['children'][$i]['data']['score'];
 				}
 			}
 		}

@@ -45,9 +45,10 @@ function addPage(title, html) {
 	pageTitles.push(title);
 
 	logStatus("Pagination", "Added page '" + title + "'", false);
-
+	
 	if ($('#pg1').html() === "") {
 		var page = getPage();
+
 		$('#pg1').html(pages[page]);
 		window["pageLoadModule" + page](updateData);
 	}

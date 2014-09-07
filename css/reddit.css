@@ -1,0 +1,9 @@
+#redditScroller {
+	position: absolute;
+	height: 50px;
+	width: 200%;
+	color: #FFF;
+	font-family: 'Ubuntu';
+	font-size: 18px;
+	top: 550px;
+}

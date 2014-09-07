@@ -4,13 +4,22 @@ function initModuleClock(updateData) {
 
 function clock() {
 	var now = new Date();
+	var hours = "";
+	var minutes = "";
 
-	if (now.getMinutes().toString().length == 1) {
-			$('#time').html(now.getHours() + ":0" + now.getMinutes());
+	if (now.getHours().toString().length == 1) {
+			hours = "0" + now.getHours();
 	} else {
-			$('#time').html(now.getHours() + ":" + now.getMinutes());
+			hours = now.getHours();
 	}
 
+	if (now.getMinutes().toString().length == 1) {
+			minutes = "0" + now.getMinutes();
+	} else {
+			minutes = now.getMinutes();
+	}
+
+	$('#time').html(hours + ":" + minutes);
 	$('#day').html(clockDay(now.getDay()));
 	$('#month').html(clockMonth(now.getMonth()) + " " + now.getDate());
 

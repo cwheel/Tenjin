@@ -8,6 +8,8 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
+		<link rel="stylesheet" type="text/css" href="css/npr.css">
+		<link rel="stylesheet" type="text/css" href="css/reddit.css">
 		<link rel="stylesheet" type="text/css" href="css/page.css">
 		<link rel="stylesheet" type="text/css" href="css/homework.css">
 		<link rel="stylesheet" type="text/css" href="css/alarms.css">
@@ -36,7 +38,7 @@
 		</div>
 
 		<div id="logo"></div>
-		<div id="build">Build 581e3b50e3 (v1.0)</div>
+		<div id="build">Build 581e3b50e3 (v1.0.2)</div>
 
 		<div class="page" id="pg1"></div>
 		<div class="page" id="pg2"></div>
@@ -44,7 +46,3 @@
 		<audio name="media" id="alarm"><source src="<?php include('config.php'); echo $config['alarmSound']; ?>" type="audio/mpeg" id="player"></audio>
 	</body>
 </html>
-
-<?php
-	include('config.php');
-?>
