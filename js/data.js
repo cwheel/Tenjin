@@ -1,4 +1,5 @@
-var modules = ["calendar.js", "alarms.js", "background.js", "homework.js", "sleep.js", "clock.js", "wundergroundWeekly.js", "wundergroundHourly.js", "npr.js", "reddit.js", "oit.js"];
+//var modules = ["calendar.js", "alarms.js", "background.js", "homework.js", "sleep.js", "clock.js", "wundergroundWeekly.js", "wundergroundHourly.js", "npr.js", "reddit.js", "oit.js"];
+var modules = ["calendar.js", "background.js", "nakedsecurity.js", "clock.js", "npr.js", "reddit.js", "oit.js"];
 var initsRun = 0;
 var updateData = null;
 

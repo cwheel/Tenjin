@@ -8,8 +8,9 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/day.css">
-		<link rel="stylesheet" type="text/css" href="css/npr.css">
+		<link rel="stylesheet" type="text/css" href="css/news.css">
 		<link rel="stylesheet" type="text/css" href="css/reddit.css">
+		<link rel="stylesheet" type="text/css" href="css/oit.css">
 		<link rel="stylesheet" type="text/css" href="css/page.css">
 		<link rel="stylesheet" type="text/css" href="css/homework.css">
 		<link rel="stylesheet" type="text/css" href="css/alarms.css">
