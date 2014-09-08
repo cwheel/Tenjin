@@ -44,11 +44,11 @@ function checkSleep() {
 			}
 		} else {
 			if (sleepTimes.wake == nowTime) {
-				isSleeping = false;
 				if (isSleeping) {
 					isSleeping = false;
 					$("#sleep").hide();
 				}
+				isSleeping = false;
 			}
 		}
 	}
