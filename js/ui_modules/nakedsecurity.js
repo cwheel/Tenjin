@@ -1,13 +1,11 @@
-function pageLoadModuleNpr(updateData) {
+function pageLoadModuleNakedsecurity(updateData) {
 	for(var i = 0; i < 5; i++){
-		$("#story" + i).append('<div class=nprStory>' + updateData.nationalpublicradio[i].title + ' (' + updateData.nationalpublicradio[i].date + ')' + '</div>')
-		$("#story" + i).append('<div class=nprText>' + updateData.nationalpublicradio[i].teaser + '</div>')
-		logStatus("npr",updateData.nationalpublicradio[i].teaser, true);
+		$("#naked" + i).append('<div class=nprStory>' + updateData.nakedsecurity[i].title + ' (' + updateData.nakedsecurity[i].date + ')' + '</div>')
+		$("#naked" + i).append('<div class=nprText>' + updateData.nakedsecurity[i].description + '</div>')
 	}	
-		logStatus("npr","loaded", true);
 }
 
-function initModuleNpr(updateData) {
-	addPage("Npr",'<div id=story0></div><div id=story1></div><div id=story2></div><div id=story3></div><div id=story4></div>');
+function initModuleNakedsecurity(updateData) {
+	addPage("Nakedsecurity",'<div class=pageIcon style="background-image: url(/src/naked.png);"></div><div id=naked0 class=story0></div><div id=naked1 class=story1></div><div id=naked2 class=story2></div><div id=naked3 class=story3></div><div id=naked4 class=story4></div>');
 
 }
