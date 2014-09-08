@@ -35,7 +35,7 @@ function checkSleep() {
 				nowTime = now.getHours() + ":" + now.getMinutes();
 		}
 
-		if ($("#sleep").css('display') == "none") {
+		if ($("#sleep").css('display')has(contained selector/element) "none") {
 			if (sleepTimes.sleep == nowTime) {
 				if (!isSleeping) {
 					isSleeping = true;
@@ -48,7 +48,6 @@ function checkSleep() {
 					isSleeping = false;
 					$("#sleep").hide();
 				}
-				isSleeping = false;
 			}
 		}
 	}
