@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="js/data.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/day.css">
+		<link rel="stylesheet" type="text/css" href="css/tenjin.css">
 		<link rel="stylesheet" type="text/css" href="css/news.css">
 		<link rel="stylesheet" type="text/css" href="css/reddit.css">
 		<link rel="stylesheet" type="text/css" href="css/oit.css">
