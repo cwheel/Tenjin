@@ -1,5 +1,6 @@
 var offscreen = "1000px";
-var stories = "Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667] • Some Story [3667]";
+var timeOffset = 0.12;
+var stories = "";
 
 function initModuleReddit(updateData) {
 	stories = processReddit(updateData.redditheadliner);
@@ -17,7 +18,7 @@ function jsonUpdateModuleReddit(updateData) {
 function scroll() {
 	$('#redditScroller').css('left', offscreen);
 	$('#redditScroller').css('width', stories.length*10 + "px");
-	$("#redditScroller").animate({left: "-" + stories.length*6 + "px"}, stories.length*1000*0.1, 'linear', function() {
+	$("#redditScroller").animate({left: "-" + stories.length*6 + "px"}, stories.length*1000*timeOffset, 'linear', function() {
 		scroll();
 	});
 }
@@ -35,7 +36,7 @@ function processReddit(reddit) {
 		}
 		
 		for (var post in reddit[sub]) {
-			rs = rs + "&nbsp;&nbsp;•&nbsp;&nbsp;" + post;
+			rs = rs + "&nbsp;&nbsp;•&nbsp;&nbsp;" + post + "&nbsp;[" + reddit[sub][post] + "]";
 		}
 	}
 
