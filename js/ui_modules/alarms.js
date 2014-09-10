@@ -9,7 +9,9 @@ function pageLoadModuleAlarms(updateData) {
 	if (hour > 12){
 		hour = now.getHours() - 12
 	}
-	$("#alarmIcon").append('<div class=clockIcon style="background-image: url(/src/clockCircle.png);"></div><div class=clockIcon style="background-image: url(/src/clockMin.png);-webkit-transform: rotate(' + (min*6) + 'deg);"></div><div class=clockIcon style="background-image: url(/src/clockHour.png);-webkit-transform: rotate(' + (min + hour*60)/(2) + 'deg);"></div>')
+	$("#alarmIcon").append('<div class=clockIcon style="background-image: url(/src/clockCircle.png);"></div>')
+	$("#alarmIcon").append('<div class=clockIcon style="background-image: url(/src/clockMin.png);-webkit-transform: rotate(' + (min*6) + 'deg);transform: rotate(' + (min*6) + 'deg);"></div>')
+	$("#alarmIcon").append('<div class=clockIcon style="background-image: url(/src/clockHour.png);-webkit-transform: rotate(' + (min + hour*60)/(2) + 'deg);transform: rotate(' + (min + hour*60)/(2) + 'deg);"></div>')
 	if (alarms !== null) {
 		for (var day in alarms) {
 			$("#alarmsContainer").append('<div class="alDay">' + day + '</div>');
@@ -18,6 +20,7 @@ function pageLoadModuleAlarms(updateData) {
 			}
 		}
 	}
+	now = null;
 }
 
 function jsonUpdateModuleAlarms(updateData) {
