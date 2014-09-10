@@ -28,7 +28,7 @@ function jsonUpdateModuleAlarms(updateData) {
 }
 
 function initModuleAlarms(updateData) {
-	addPage("Alarms", '<div class=pageIcon id=alarmIcon></div><div id="title">Alarms</div><div id="bar"></div><div id="alarmsContainer"></div>');
+	addPage("Alarms", '<div class="pageIcon" id="alarmIcon"></div><div id="title">Alarms</div><div id="bar"></div><div id="alarmsContainer"></div>');
 	alarms = updateData.alarms;
 	checkAlarms();
 }
